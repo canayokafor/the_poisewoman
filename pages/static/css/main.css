@@ -1,0 +1,65 @@
+
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: white;
+    font-family: 'Crimson Text', serif;
+    /* font-family: 'Alata', sans-serif; */
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+.banner{
+    padding: 5px;
+    min-height: 60vh;
+    background-image: url("/static/img/banner1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.height{
+    min-height: 100vh;
+}
+
+.pad{
+    margin-top: 380px;
+}
+
+.reviews{
+    min-height: 80vh;
+}
+
+
+.banp{
+    font-size: 20px;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    font-weight: bold;
+    color: white;
+    text-align: right;
+    padding-top: 60px;
+}
+
+.color{
+    background-color: deeppink;
+}
+
+.bg1{
+    background-color: rgb(124, 127, 131);
+}
+.txtcolor{
+    color: deeppink;
+}
+
+/* CSV
+3185fc,f8e16c,dc6bad,475841,6d213c
+
+/* Array */
+/* ["3185fc","f8e16c","dc6bad","475841","6d213c"] */
+
+/* Object
+{"Azure":"3185fc","Naples 
+    Yellow":"f8e16c","Super;
+     Pink":"dc6bad","Rifle 
+     Green":"475841",
+     "Old Mauve":"6d213c"} */

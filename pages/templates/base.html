@@ -1,0 +1,114 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}
+    <title>The Poise Woman</title>
+    {% endblock %}
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <!-- fontawesome css -->
+    <link rel="stylesheet" href="{% static 'css/all.css' %}">
+
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <a class="navbar-brand" href="#"><img src="{% static 'img/logo.png' %}" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link text-info" style="color: deeppink;" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">       
+                  <a class="nav-link text-info" style="color: deeppink;" href="#books">Books</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-info" style="color: deeppink;" href="#footer">Contact</a>
+                  </li>
+              </ul>
+            </div>
+          </nav>
+           
+    </div>
+
+    
+    
+    {% block content %}
+    {% endblock %}
+<section id="footer" class="bg-dark">
+    <div class="container-fluid bg-dark">
+        <div class="row">
+            <!-- About the Author -->
+            <div class="col-lg-4 col-sm-12 text-white">
+                <div class="card mb-3 bg-dark" style="max-width: 540px;">
+                    <div class="row no-gutters">
+                      <div class="col-md-4 pt-4">
+                        <img src="{% static 'img/mac.jpg' %}" class="card-img" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title text-info">About Me</h5>
+                          <p class="card-text">Makua is a Practicing medical Doctor who is passionate about people with a unique interest in the women and children. She is an avid reader and a Prolific writer who is inspired by everything around her With a Burning desire to speak the Unspoken words about relationships she teaches people how to build themselves up to be able to build and sustain healthy relationships.</p>
+                          <a href="/about" class="btn btn-info" >See More</a>
+                         </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-4 col-sm-12 pt-2">
+                <h2 class="text-info">Feel Free to Write Me</h2>
+                <p class="text-white"><img src="{% static 'img/email.png'%}" alt="" class="mr-2">thepoisewoman900@gmail.com</p>
+                <p class="text-white"><img src="{% static 'img/ig.png'%}" alt="" class="mr-2">@the_poisewoman</p>
+                <p class="text-white"><img src="{% static 'img/fb.png'%}" alt="" class="mr-2">poisewoman</p>
+
+        
+
+
+            </div>
+            <div class="col-lg-4 col-sm-12 text-white">
+              <h2 class="text-info">Be the First To Read Our Free Books</h2>
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputText">Full Name</label>
+                  <input type="text" class="form-control" id="exampleInputtext" aria-describedby="name">
+                  
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email Address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+              <button type="submit" class="btn btn-info">Submit</button>
+              </form>
+            </div>
+        </div> 
+    </div>
+</section>
+<div class="container">
+  <div class="row">
+    <div class="col text-center ">
+      <p class="text-muted ">The Poise Woman 2020 &copy; All Rights Reserved!</p>
+    </div>
+  </div>
+</div>
+    <!-- jquery -->
+    <script src="{% static 'js/jquery-3.5.1.js' %}"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+   <!-- fontawesome js --> 
+    <script src="{% static 'js/all.js' %}"></script>
+</body>
+</html>

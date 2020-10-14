@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}<title>Welcome to The Poise Woman</title> {% endblock %}
+
+{% block content %}
+
+<!-- Header containing the logo -->
+
+<!-- banner -->
+<section id="banner">
+    <div class="container-fluid bg-white">
+        <div class="row py-4">
+            <div class="col-sm-12 m-auto col-md-4 col-lg-12 py-4">
+                <h1 class="display-4 text-center" style="color: deeppink;">A Girl's Guide to a Fulfilling Relationship</h1>
+                </div>
+            </div>
+        </div>      
+    </div>
+    
+</section>
+
+
+
+<section id="books">
+    <!-- Paid book -->
+    <div class="container-fluid mt-2" >
+        <div class="row" style="background-color: lightblue;">
+            <div class="col-lg-12 col-sm-12 pt-1 text-center mb-4" ><h1 class="font=weight-bolder text-capitalize">The Poise Woman</h1></div>
+            <div class="col-lg-6 col-sm-12 py-2">
+                <img src="{% static 'img/poisewoman.png' %}" class="ml-5" alt="">
+            </div>  
+            <div class="col-lg-6 col-sm-12 mr-6">
+                <p class="pt-5 lead text-white">
+                    A self help contemporary fiction that would transform your life in minutes.
+                    <ul>
+                    <li>This book will boost your selfconfidence</li> 
+                    <li>Teach you how to spot dangerous men in relationships</li>
+                    <li>Make you laugh loudly</li>
+                    <li>Show you why you need to exit toxic relationships</li>
+                    <li>Give you a reason to try out new things.</li>
+                    
+                </ul>
+                That’s not all, you get a bonus for buying this book.
+            </p>
+                 <a href="https://paystack.com/buy/the-poise-woman-gtqoft"><button class="btn btn-dark btn-block" ><h2 class="text-white">BUY NOW</h2></button></a>
+            </div> 
+        </div>
+    </div>
+    
+
+</section>
+
+
+{% endblock %}
